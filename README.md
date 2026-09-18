@@ -7,7 +7,7 @@ The scripts are in two subfolders.
 
   The 'pre_processing' folder contains scripts that process the raw data and create the following folders:
   
-    files_coeff_series\\
+    files_coeff_series
     files_cond_avg
     files_condprob
     *files_design
