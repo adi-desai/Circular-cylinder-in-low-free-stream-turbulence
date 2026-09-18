@@ -1,7 +1,7 @@
 # project_cyl_in_fst
 All scripts used in preparation of the 2026 PRF paper
 
-The scripts are all .mat files.
+The scripts are all .mat files.\\
 The scripts are in two subfolders. 
   The 'pre_processing' folder contains scripts that process the raw data and create the following folders:
     files_coeff_series
