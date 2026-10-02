@@ -1,22 +1,18 @@
 # project_cyl_in_fst
-All scripts used in preparation of the 2026 PRF paper
 
-The scripts are all .mat files.
+The folder contains the processed data and scripts used for analysis and preparation of the following paper:
 
-The scripts are in two subfolders. 
+A.Desai and S. Mittal, ``Effect of low intensity free stream turbulence on the dynamics of laminar separation bubble over a circular cylinder,” Physical Review Fluids, 2026
 
-  The 'pre_processing' folder contains scripts that process the raw data and create the following folders:
-  
+- The scripts are in MATLAB, contained in the 'scripts' subdirectory.
+- The processed dataset is in the following subdirectories:
+
     files_coeff_series
     files_cond_avg
     files_condprob
-    *files_design
-    *files_limits_of_CR
-    *files_literature_data
+    files_design
+    files_limits_of_CR
     files_mean_coeff
     files_mean_cp
-    files_POD
     files_Re&U
-    files_rms_cp
     files_spectra
-The 'post_processing' folder contains scripts that work with the files written into above folders to further analysis and visualization
