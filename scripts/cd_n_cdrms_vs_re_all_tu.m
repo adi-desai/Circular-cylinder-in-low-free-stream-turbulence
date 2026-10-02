@@ -3,17 +3,15 @@ cd ../../pressure_measurments/
 addpath scripts;
 
 cd 'files_mean coeff';
-data1=importdata('fst006_1_cdcl.xls');
+data1=importdata('fst_006_cdcl.xls');
 data1(31,:)=[];
 Re1=data1(:,1); Cd1=data1(:,2);  Cdrms1=data1(:,4);
 
-data2=importdata('fst040_1_cdcl.xls');
+data2=importdata('fst_051_cdcl.xls');
 Re2=data2(:,1); Cd2=data2(:,2);  Cdrms2=data2(:,4);
-Cdrms2(1,1)=0.0925; Cdrms2(4,1)=0.0732; Cdrms2(57,1)=0.0350; Cdrms2(58,1)=0.0346;
 
-data3=importdata('fst062_2_cdcl.xls'); cd ..
+data3=importdata('fst_076_cdcl.xls'); cd ..
 Re3=data3(:,1); Cd3=data3(:,2);  Cdrms3=data3(:,4);
-Cdrms3(38:43,1)=[.0319;.0318;.0317;.0316;.0315;.0314];
 
 %% plotting
 mk_sz=3; fs=10; col=[.93 .69 .13];

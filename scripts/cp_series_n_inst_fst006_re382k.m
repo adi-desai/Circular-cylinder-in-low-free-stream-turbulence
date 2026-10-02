@@ -3,7 +3,7 @@ clear all; clc;
 cd pressure_measurements\
 addpath scripts\
 
-run_name='fst006_1';
+run_name='fst_006';
 cd files_design; theta= load('Theta_middle complete.xls'); cd ..; %theta data for x axis
 cd files_raw; cd (run_name); files = dir('*.xls'); %files(31,:)=[];
 file=files(24); a=load(file.name); cd ../..

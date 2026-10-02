@@ -2,11 +2,11 @@ clear all; clc;
 cd ../../pressure_measurments/
 addpath scripts;
 
-run='fst006_1'; i1=33;
-cd files_coeff_series; cd(run);files=dir('*.txt');
+run='fst_006'; i1=33;
+cd files_coeff_series; cd(run);files=dir('*.csv');
 file1=files(i1); dat1=load(file1.name); cd ../..;
-cd files_Re&U; nm1=[run,'_Re&U.xls']; dat4=importdata(nm1); cd ..
-cd 'files_mean cp';nm1=[run,'_cpbar.xls']; a=importdata(nm1); cd ..
+cd files_Re_U_and_Q; nm1=[run,'_Re_U_and_Q.csv']; dat4=importdata(nm1); cd ..
+cd 'files_mean cp';nm1=[run,'_cpbar.csv']; a=importdata(nm1); cd ..
 cd files_design; theta=load('theta_middle.txt'); cd ..
 
 % get the required data

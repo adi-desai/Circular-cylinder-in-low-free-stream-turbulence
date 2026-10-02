@@ -6,13 +6,10 @@ cd pressure_measurements\
 % addpath scripts;
 
 cd 'files_mean coeff';
-a=importdata('fst006_1_cdcl.xls');  a(31,:)=[];
-b=importdata('fst040_1_cdcl.xls'); 
-c=importdata('fst062_2_cdcl.xls'); cd ..
+a=importdata('fst_006_cdcl.xls');  a(31,:)=[];
+b=importdata('fst_051_cdcl.xls'); 
+c=importdata('fst_076_cdcl.xls'); cd ..
 Re_star1=a(:,end); Re_star2=b(:,end); Re_star3=c(:,end);
-% modify data for fst062
-b(2,4)=0.825; b(4,4)=0.732; b(57:58,4)=[0.0350;0.0346];
-c(38:43,4)=[.0319;.0318;.0317;.0316;.0315;.0314];
 % color for the plot
 col1=[1 .84 .1];
 

@@ -12,13 +12,13 @@ cd 'files_mean coeff';
 
 choice = input('Use data corrected for blockage? enter y or n \n');
     if choice == 'y'
-        run='fst006_1'; nm1 = [run,'_CdCl.txt']; c_1 = readcell(nm1);
+        run='fst_006'; nm1 = [run,'_CdCl.txt']; c_1 = readcell(nm1);
         data_4 = cell2mat( c_1(2:end,:) );
-        run='fst040_1'; nm2 = [run,'_CdCl.txt']; c_2 = readcell(nm2);
+        run='fst_051'; nm2 = [run,'_CdCl.txt']; c_2 = readcell(nm2);
         data_5 = cell2mat( c_2(2:end,:) );
         else
-        run='fst006_1'; nm1=[run,'_CdCl.xls']; data_4 = importdata(nm1);
-        run='fst040_1'; nm1=[run,'_CdCl.xls']; data_5 = importdata(nm1); 
+        run='fst_006'; nm1=[run,'_CdCl.xls']; data_4 = importdata(nm1);
+        run='fst_051'; nm1=[run,'_CdCl.xls']; data_5 = importdata(nm1); 
     end
  cd ..;
 

@@ -4,7 +4,7 @@ cd C:\Users\flowcon_user\Desktop\docs_aditya\other_projects\cyl_fst_paper\
 cd pressure_measurements/
 addpath scripts;
 
-run='fst006_1';
+run='fst_006';
 cd 'files_mean cp'; a=importdata('fst006_1_cpbar.txt'); cd ..;
 cd files_design; theta=load('Theta_middle.txt'); cd ..;
 

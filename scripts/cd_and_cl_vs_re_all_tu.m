@@ -2,9 +2,9 @@ clear all; clc;
 cd ../../pressure_measurments;
 cd 'files_mean coeff';
 
-run='fst006_1'; nm1=[run,'_CdCl.xls']; a=importdata(nm1);
-run='fst040_1'; nm1=[run,'_CdCl.xls']; b=importdata(nm1);
-run='fst062_2'; nm1=[run,'_CdCl.xls']; c=importdata(nm1); cd ..;
+run='fst_006'; nm1=[run,'_CdCl.xls']; a=importdata(nm1);
+run='fst_051'; nm1=[run,'_CdCl.xls']; b=importdata(nm1);
+run='fst_076'; nm1=[run,'_CdCl.xls']; c=importdata(nm1); cd ..;
 
 Re1=a(:,1); Re2=b(:,1); Re3=c(:,1);
 

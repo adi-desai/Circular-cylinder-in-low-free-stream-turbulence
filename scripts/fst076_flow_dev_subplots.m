@@ -2,13 +2,11 @@ clearvars; close all; clc;
 cd C:\Users\flowcon_user\Desktop\docs_aditya\other_projects\cyl_fst_paper\
 cd pressure_measurements;
 
-run_nm='fst062_2';
+run_nm='fst_076';
 cd files_condprob; nm1=[run_nm,'_condprob.txt']; dat1=load(nm1); cd ..
 cd 'files_mean coeff'; nm2=[run_nm,'_cdcl.xls']; dat2=importdata(nm2); cd ..
 cd files_spectra; cd (run_nm); dat3=load('lift_coeff.txt'); cd ../..
 cd 'files_mean cp'; nm4=[run_nm,'_cpbar.txt']; dat4=importdata(nm4); cd ..
-% modify data for fst062
-dat2(38:43,4)=[.0319;.0318;.0317;.0316;.0315;.0314];
 
 % data for first subplot
 Re_star=dat2(:,end); s0=dat1(:,2); s1b=dat1(:,3); s1t=dat1(:,4); s2=dat1(:,5);

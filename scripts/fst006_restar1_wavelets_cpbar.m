@@ -2,7 +2,7 @@ clear all; clc;
 cd ../../pressure_measurments/
 addpath scripts;
 
-run='fst006_1'; i1=42;
+run='fst_006'; i1=42;
 cd files_coeff_series; cd(run);files=dir('*.txt');
 file1=files(i1); dat1=load(file1.name); cd ../..;
 cd files_Re&U; nm1=[run,'_Re&U.xls']; dat4=importdata(nm1); cd ..

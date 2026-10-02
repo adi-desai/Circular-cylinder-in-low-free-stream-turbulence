@@ -3,7 +3,7 @@ cd ../../pressure_measurments/
 addpath scripts;
 
 cd files_design; theta=load('theta_middle.txt'); cd ..
-runs_array={'fst006_1','fst040_1','fst062_2'};
+runs_array={'fst_006','fst_051','fst_076'};
 color_array=[0,0,1; 1,0,0; 0,0,0;];
 
 %% plotting

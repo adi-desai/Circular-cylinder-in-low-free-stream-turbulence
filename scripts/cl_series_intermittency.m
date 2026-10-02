@@ -3,9 +3,9 @@ cd ../../../pressure_measurments/
 addpath scripts;
 
 cd 'files_coeff_series'
-cd fst006_1; dat1=load('Re377487.txt'); cd ..;
-cd fst040_1; dat2=load('Re243778.txt'); cd ..
-cd fst062_2; dat3=load('Re173489.txt'); cd ../..
+cd fst_006; dat1=load('Re377487.txt'); cd ..;
+cd fst_051; dat2=load('Re243778.txt'); cd ..
+cd fst_076; dat3=load('Re173489.txt'); cd ../..
 
 %% plotting
 t1=(24.22/0.248)*dat1(:,1); cl1=dat1(:,3); 

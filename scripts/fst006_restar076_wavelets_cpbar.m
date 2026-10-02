@@ -2,7 +2,7 @@ clear all; clc;
 cd ../../pressure_measurments/
 addpath scripts;
 
-run='fst006_1'; i1=38;
+run='fst_006'; i1=38;
 cd files_design; theta=load('theta_middle.txt'); cd ..
 cd files_coeff_series; cd(run);files=dir('*.txt');
 file1=files(i1); dat1=load(file1.name); cd ../..;

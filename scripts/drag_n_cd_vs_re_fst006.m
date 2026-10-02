@@ -4,9 +4,9 @@ cd C:\Users\flowcon_user\Desktop\docs_aditya\other_projects\cyl_fst_paper\
 cd pressure_measurements/
 addpath scripts;
 
-cd 'files_mean coeff'; a=importdata('fst006_1_cdcl.xls');
+cd 'files_mean coeff'; a=importdata('fst_006_cdcl.xls');
 cd ../files_Re&U; 
-b=importdata('fst006_1_Re&U.txt'); 
+b=importdata('fst_006_Re_U_and_Q.txt'); 
 cd ..
 
 %remove spurious data

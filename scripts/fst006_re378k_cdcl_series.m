@@ -2,7 +2,7 @@ clearvars; close all; clc;
 cd ../../pressure_measurments/
 addpath scripts;
 
-cd files_coeff_series; cd fst006_1\
+cd files_coeff_series; cd fst_006\
 a=importdata('Re377487.txt'); cd ../..
 t1=a(:,1); cd1=a(:,2); cl1=a(:,3);
 

@@ -1,8 +1,8 @@
 clearvars; clc
 cd ../../pressure_measurments;
 
-cd 'files_mean coeff'; a=importdata('fst006_1_cdcl.xls');
-cd ../files_Re&U; b=importdata('fst006_1_Re&U.xls'); cd ..
+cd 'files_mean coeff'; a=importdata('fst_006_cdcl.csv');
+cd ../files_Re&U; b=importdata('fst_006_Re_U_and_Q.csv'); cd ..
 a(31,:)=[]; b(31,:)=[];
 Re=a(:,1); Cd=a(:,2);  q=b(:,3); d=Cd.*q;
 

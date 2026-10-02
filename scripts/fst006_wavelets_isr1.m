@@ -3,7 +3,7 @@ cd ..\..\pressure_measurments\
 % cd ../../../pressure_measurments/
 addpath scripts;
 
-run='fst006_1';
+run='fst_006';
 cd files_coeff_series; cd(run);files=dir('*.txt');
 
 i1=19; i2=24; i3=30;

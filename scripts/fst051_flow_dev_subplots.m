@@ -4,7 +4,7 @@ cd C:\Users\flowcon_user\Desktop\docs_aditya\other_projects\cyl_fst_paper\
 cd pressure_measurements;
 addpath scripts;
 
-run_nm='fst040_1';
+run_nm='fst_051';
 cd files_condprob; nm1=[run_nm,'_condprob.txt']; dat1=load(nm1); cd ..
 cd 'files_mean coeff'; nm2=[run_nm,'_cdcl.xls']; dat2=importdata(nm2); cd ..
 cd files_spectra; cd (run_nm); dat3=load('lift_coeff.txt'); cd ../..
